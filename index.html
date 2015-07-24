@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<ul>
+  {% for post in paginator.posts %}
+  <li>
+    <div class="row">
+      <div class="col l12">
+        <div class="card hoverable wow fadeInUp animated">
+          <div class="card-content {% if site.theme.card.content %}{{ site.theme.card.content }}{% else %}white{% endif %}">
+            <div class="row valign-wrapper">
+              <div class="col l1">
+                <img src="{%if site.owner.avatar %}{{ baseurl }}/img/{{ site.owner.avatar }}{% else %}{{ baseurl }}/img/avatar.jpg{% endif %}" alt="" class="circle responsive-img transparent">
+              </div>
+              <div class="col l11">
+                <span class="card-title black-text">{{ post.title }}</span>
+                <p><span class="black-text">{{ post.date | date: "%b %-d, %Y" }}&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-clock-o">&nbsp;{{ post.content | number_of_words | plus:90 | divided_by:180 }} min.</i></span>  </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-action {% if site.theme.card.action %}{{ site.theme.card.action }}{% else %}white{% endif %}">
+            <div class="row">
+              <div class="col l2">
+                <a class="waves-effect waves-light btn {% if site.theme.card.button %}{{ site.theme.card.button }}{% else %}red white-text{% endif %}" href="{{ post.url | prepend: site.baseurl }}">Read</a>
+              </div>
+              <div class="col l10 right-align">
+              {% for tag in post.tags %} <span class="task-cat {% if site.theme.tag %}{{ site.theme.tag }}{% else %}blue{% endif %} ">{{ tag }}</span> {% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+  {% endfor %}
+</ul>
+
+{% include pagination.html %}

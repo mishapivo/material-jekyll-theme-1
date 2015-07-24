@@ -1,0 +1,71 @@
+# Site settings
+title: Title here
+
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url:
+
+
+disqus_shortname:
+google_analytics:
+
+paginate: 5
+
+
+#Owner information
+owner:
+  name: Your name
+  description: Little description
+  avatar:
+  email: your-email@domain.com
+  twitter: your_twitter
+  github:  your_github
+  facebook:
+  linkedin: your_linkedin
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+
+#Changing colors  http://materializecss.com/color.html
+
+theme:
+  #About page
+    #For background check about/index.html out
+  author:
+    card:
+    secondary_content:
+    content:
+  blog:
+    card:
+    icon:
+    secondary_content:
+    content:
+
+  #Main page / General settings
+  background:
+  card:
+    content:
+    action:
+    button:
+  fixed_button:
+  nav:
+  nav_text:
+  # Parallax - image banner
+  parallax:
+    img1: bus.jpg
+    img2: bridge.jpg
+  tag: #It applies Tag's page as well.
+
+  #Tag page
+
+  #Post page
+  post:
+    background:
+    card:
+      content:
+      action:

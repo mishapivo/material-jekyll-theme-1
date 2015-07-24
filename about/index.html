@@ -1,0 +1,30 @@
+---
+layout: page
+background: white
+---
+<div class="row">
+  <div class="col l6">
+    <!-- Promo Content 2 goes here -->
+    <ul class="collection hoverable fadeInUp animated">
+      <li class="collection-item avatar {% if site.theme.author.card %}{{ site.theme.author.card }}{% else %}white{% endif %}">
+        <img src="{%if site.owner.avatar %}{{ baseurl }}/img/{{ site.owner.avatar }}{% else %}{{ baseurl }}/img/avatar.jpg{% endif %}" alt="" class="circle">
+        <div class="title">{{ site.owner.name }}</div>
+        <div>Author </div>
+        <div class="secondary-content"><i class="material-icons {% if site.theme.author.secondary_content %}{{ site.theme.author.secondary_content }}{% else %}white green-text{% endif %}">info</i></div>
+      </li>
+      <li class="collection-item {% if site.theme.author.content %}{{ site.theme.author.content }}{% else %}green{% endif %}">{{site.description}}</li>
+    </ul>
+  </div>
+  <div class="col l6">
+    <!-- Promo Content 2 goes here -->
+    <ul class="collection hoverable fadeInUp animated">
+      <li class="collection-item avatar {% if site.theme.blog.card %}{{ site.theme.blog.card }}{% else %}white{% endif %}">
+        <i class="material-icons circle {% if site.theme.blog.icon %}{{ site.theme.blog.icon }}{% else %}blue{% endif %}">receipt</i>
+        <div class="title">{{ site.title }}</div>
+        <div>Blog </div>
+        <div class="secondary-content"><i class="material-icons {% if site.theme.blog.secondary_content %}{{ site.theme.blog.secondary_content }}{% else %}blue-text{% endif %}">info</i></div>
+      </li>
+      <li class="collection-item {% if site.theme.blog.content %}{{ site.theme.blog.content }}{% else %}blue{% endif %}">{{site.description}}</li>
+    </ul>
+  </div>
+</div>

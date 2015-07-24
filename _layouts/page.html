@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="{% if page.background %}{{ page.background }}{% else %}white{% endif %}">
+
+  {% include header.html %}
+
+
+
+  <div id="page" class="container">
+
+      {{ content }}
+
+  </div>
+
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

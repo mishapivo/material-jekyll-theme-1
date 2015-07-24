@@ -1,0 +1,27 @@
+.task-cat {
+  padding: 2px 4px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+}
+
+#page {
+  padding-top: 100px;
+}
+
+.post-content {
+  padding-top: 50px;
+}
+.task-cat2 {
+  padding: 2px 4px;
+  color: #fff;
+  font-weight: 500
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-clip: padding-box;
+}

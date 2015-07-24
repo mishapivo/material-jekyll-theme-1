@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body class="blue teal">
+
+  {% include header.html %}
+
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="{{ baseurl }}/img/{{ site.theme.parallax.img1 }}"></div>
+  </div>
+  <div class="section {% if site.theme.background %}{{ site.theme.background }}{% else %}grey lighten-3{% endif %}">
+    <div class="row container">
+      {{ content }}
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="{{ baseurl }}/img/{{ site.theme.parallax.img2 }}"></div>
+  </div>
+
+  {% include google_analytics.html %}
+  {% include footer.html %}
+
+</body>
+
+</html>
