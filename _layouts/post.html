@@ -4,7 +4,7 @@
 <body class="">
   {% include header.html %}
   <div class="parallax-container">
-    <div class="parallax"><img src="{% if page.parallax.img1 %}/img/{{ page.parallax.img1 }}{%else%}{{ baseurl }}/img/{{ site.theme.parallax.img1 }}{% endif %}"></div>
+    <div class="parallax"><img src="{% if page.parallax.img1 %}/img/{{ page.parallax.img1 }}{%else%}{{ site.baseurl }}/img/{{ site.theme.parallax.img1 }}{% endif %}"></div>
   </div>
   <div class="section {%if site.theme.post.background %}{{ site.theme.post.background }}{% elsif site.theme.background %}{{ site.theme.background }}{% else %}grey lighten-3{% endif %}">
     <div class="row container">
@@ -14,7 +14,7 @@
             <div class="card-content {% if site.theme.post.card.content %}{{ site.theme.post.card.content }}{% elsif site.theme.card.content %}{{ site.theme.card.content }}{% else %}white{% endif %}">
               <div class="row valign-wrapper">
                 <div class="col l2">
-                  <img src="{%if site.owner.avatar %}{{ baseurl }}/img/{{ site.owner.avatar }}{% else %}{{ baseurl }}/img/avatar.jpg{% endif %}" alt="" class="circle responsive-img transparent">
+                  <img src="{%if site.owner.avatar %}{{ site.baseurl }}/img/{{ site.owner.avatar }}{% else %}{{ site.baseurl }}/img/avatar.jpg{% endif %}" alt="" class="circle responsive-img transparent">
                 </div>
                 <div class="col l10">
                   <h3 class="black-text">{{ page.title }}</h3>
@@ -45,7 +45,7 @@
     </div>
   </div>
   <div class="parallax-container">
-    <div class="parallax"><img src="{% if page.parallax.img2 %}/img/{{ page.parallax.img2 }}{%else%}{{ baseurl }}/img/{{ site.theme.parallax.img2 }}{% endif %}"></div>
+    <div class="parallax"><img src="{% if page.parallax.img2 %}{{ site.baseurl }}/img/{{ page.parallax.img2 }}{%else%}{{ site.baseurl }}/img/{{ site.theme.parallax.img2 }}{% endif %}"></div>
   </div>
   {% include footer.html %}
 </body>
