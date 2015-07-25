@@ -1,5 +1,5 @@
 # Site settings
-title: Title here
+title: Material Jekyll Theme
 
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -9,9 +9,8 @@ baseurl: "/material-jekyll-theme/" # the subpath of your site, e.g. /blog/
 url:
 
 
-disqus_shortname:
-google_analytics:
-
+disqus_shortname: materialjekylltheme
+google_analytics: UA-58393025-3
 paginate: 5
 
 
