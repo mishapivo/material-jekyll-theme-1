@@ -7,7 +7,7 @@ background: white
     <!-- Promo Content 2 goes here -->
     <ul class="collection hoverable fadeInUp animated">
       <li class="collection-item avatar {% if site.theme.author.card %}{{ site.theme.author.card }}{% else %}white{% endif %}">
-        <img src="{%if site.owner.avatar %}{{ baseurl }}/img/{{ site.owner.avatar }}{% else %}{{ baseurl }}/img/avatar.jpg{% endif %}" alt="" class="circle">
+        <img src="{%if site.owner.avatar %}{{ site.baseurl }}/img/{{ site.owner.avatar }}{% else %}{{ site.baseurl }}/img/avatar.jpg{% endif %}" alt="" class="circle">
         <div class="title">{{ site.owner.name }}</div>
         <div>Author </div>
         <div class="secondary-content"><i class="material-icons {% if site.theme.author.secondary_content %}{{ site.theme.author.secondary_content }}{% else %}white green-text{% endif %}">info</i></div>
