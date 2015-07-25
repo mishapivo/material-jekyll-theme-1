@@ -10,7 +10,7 @@ layout: default
           <div class="card-content {% if site.theme.card.content %}{{ site.theme.card.content }}{% else %}white{% endif %}">
             <div class="row valign-wrapper">
               <div class="col l1">
-                <img src="{%if site.owner.avatar %}{{ baseurl }}/img/{{ site.owner.avatar }}{% else %}{{ baseurl }}/img/avatar.jpg{% endif %}" alt="" class="circle responsive-img transparent">
+                <img src="{%if site.owner.avatar %}{{ site.baseurl }}/img/{{ site.owner.avatar }}{% else %}{{ site.baseurl }}/img/avatar.jpg{% endif %}" alt="" class="circle responsive-img transparent">
               </div>
               <div class="col l11">
                 <span class="card-title black-text">{{ post.title }}</span>
