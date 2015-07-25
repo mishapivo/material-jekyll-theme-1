@@ -11,7 +11,7 @@
     {% if page == paginator.page %}
     <li class="active">{{ page }}</li>
     {% elsif page == 1 %}
-    <li class="waves-effect"><a href="{{ site.url }}/">{{ page }}</a></li>
+    <li class="waves-effect"><a href="{{ site.baseurl }}/">{{ page }}</a></li>
     {% else %}
     <li class="waves-effect"><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}
